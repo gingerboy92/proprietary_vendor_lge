@@ -21,15 +21,20 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p880/proprietary/bin/nvcpud:system/bin/nvcpud \
     vendor/lge/p880/proprietary/bin/tf_daemon:system/bin/tf_daemon \
     vendor/lge/p880/proprietary/lib/egl/libEGL_tegra.so:system/lib/egl/libEGL_tegra.so \
+    vendor/lge/p880/proprietary/lib/egl/libEGL_tegra_impl.so:system/lib/egl/libEGL_tegra_impl.so \
     vendor/lge/p880/proprietary/lib/egl/libGLESv1_CM_tegra.so:system/lib/egl/libGLESv1_CM_tegra.so \
+    vendor/lge/p880/proprietary/lib/egl/libGLESv1_CM_tegra_impl.so:system/lib/egl/libGLESv1_CM_tegra_impl.so \
     vendor/lge/p880/proprietary/lib/egl/libGLESv2_tegra.so:system/lib/egl/libGLESv2_tegra.so \
+    vendor/lge/p880/proprietary/lib/egl/libGLESv2_tegra_impl.so:system/lib/egl/libGLESv2_tegra_impl.so \
     vendor/lge/p880/proprietary/lib/hw/audio.primary_vendor.tegra.so:system/lib/hw/audio.primary_vendor.tegra.so \
     vendor/lge/p880/proprietary/lib/hw/audio_policy.vendor.tegra.so:system/lib/hw/audio_policy.vendor.tegra.so \
+    vendor/lge/p880/proprietary/lib/hw/camera.vendor.tegra.so:system/lib/hw/camera.vendor.tegra.so \
     vendor/lge/p880/proprietary/lib/hw/gps.tegra.so:system/lib/hw/gps.tegra.so \
     vendor/lge/p880/proprietary/lib/hw/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
     vendor/lge/p880/proprietary/lib/hw/hwcomposer.tegra.so:system/lib/hw/hwcomposer.tegra.so \
     vendor/lge/p880/proprietary/lib/hw/sensors.tegra.so:system/lib/hw/sensors.tegra.so \
     vendor/lge/p880/proprietary/lib/lge-ril.so:system/lib/lge-ril.so \
+    vendor/lge/p880/proprietary/lib/lgejpeg.so:system/lib/lgejpeg.so \
     vendor/lge/p880/proprietary/lib/lib-lge-drm.so:system/lib/lib-lge-drm.so \
     vendor/lge/p880/proprietary/lib/libami.so:system/lib/libami.so \
     vendor/lge/p880/proprietary/lib/libami_sensor_mw.so:system/lib/libami_sensor_mw.so \
@@ -99,45 +104,3 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p880/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/lge/p880/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/lge/p880/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so
-
-# "Binary hack"
-PRODUCT_COPY_FILES += \
-    vendor/lge/p880/proprietary/lib/hw/camera.vendor.tegra.so:system/lib/hw/camera.vendor.tegra.so \
-    vendor/lge/p880/proprietary/lib/hw/grallob.tegra.so:system/lib/hw/grallob.tegra.so \
-    vendor/lge/p880/proprietary/vendor/lib/libardrv_dynamic_so:system/vendor/lib/libardrv_dynamic_so \
-    vendor/lge/p880/proprietary/vendor/lib/libcgdrv_so:system/vendor/lib/libcgdrv_so \
-    vendor/lge/p880/proprietary/vendor/lib/libjpeg_so:system/vendor/lib/libjpeg_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvavp_so:system/vendor/lib/libnvavp_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvcapclk_so:system/vendor/lib/libnvcapclk_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvcap_so:system/vendor/lib/libnvcap_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvcap_video_so:system/vendor/lib/libnvcap_video_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvcpud_client_so:system/vendor/lib/libnvcpud_client_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvddk_2d_so:system/vendor/lib/libnvddk_2d_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvddk_2d_v2_so:system/vendor/lib/libnvddk_2d_v2_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvmm_manager_so:system/vendor/lib/libnvmm_manager_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvmm_service_so:system/vendor/lib/libnvmm_service_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvmm_so:system/vendor/lib/libnvmm_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvmm_utils_so:system/vendor/lib/libnvmm_utils_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvomxadaptor_so:system/vendor/lib/libnvomxadaptor_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvomxilclient_so:system/vendor/lib/libnvomxilclient_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvos_so:system/vendor/lib/libnvos_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvrm_graphics_so:system/vendor/lib/libnvrm_graphics_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvrm_so:system/vendor/lib/libnvrm_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvwsi_so:system/vendor/lib/libnvwsi_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvomx_so:system/vendor/lib/libnvomx_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvodm_imager_so:system/vendor/lib/libnvodm_imager_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvodm_query_so:system/vendor/lib/libnvodm_query_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvmm_contentpipe_so:system/vendor/lib/libnvmm_contentpipe_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvwinsys_so:system/vendor/lib/libnvwinsys_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvmmlite_so:system/vendor/lib/libnvmmlite_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvmmlite_utils_so:system/vendor/lib/libnvmmlite_utils_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvtvmr_so:system/vendor/lib/libnvtvmr_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvmm_camera_so:system/vendor/lib/libnvmm_camera_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvsm_so:system/vendor/lib/libnvsm_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvmmlite_audio_so:system/vendor/lib/libnvmmlite_audio_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvmmlite_video_so:system/vendor/lib/libnvmmlite_video_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvmmlite_image_so:system/vendor/lib/libnvmmlite_image_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvmmlite_msaudio_so:system/vendor/lib/libnvmmlite_msaudio_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvparser_so:system/vendor/lib/libnvparser_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvglsi_so:system/vendor/lib/libnvglsi_so \
-    vendor/lge/p880/proprietary/vendor/lib/libnvcamerahdr_so:system/vendor/lib/libnvcamerahdr_so
