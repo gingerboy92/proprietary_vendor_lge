@@ -21,8 +21,15 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p880/proprietary/bin/nvcpud:system/bin/nvcpud \
     vendor/lge/p880/proprietary/bin/rild:system/bin/rild \
     vendor/lge/p880/proprietary/bin/tf_daemon:system/bin/tf_daemon \
+    vendor/lge/p880/proprietary/lib/egl/libEGL_perfhud.so:system/lib/egl/libEGL_perfhud.so \
+    vendor/lge/p880/proprietary/lib/egl/libEGL_tegra_impl.so:system/lib/egl/libEGL_tegra_impl.so \
     vendor/lge/p880/proprietary/lib/egl/libEGL_tegra.so:system/lib/egl/libEGL_tegra.so \
+    vendor/lge/p880/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
+    vendor/lge/p880/proprietary/lib/egl/libGLESv1_CM_perfhud.so:system/lib/egl/libGLESv1_CM_perfhud.so \
+    vendor/lge/p880/proprietary/lib/egl/libGLESv1_CM_tegra_impl.so:system/lib/egl/libGLESv1_CM_tegra_impl.so \
     vendor/lge/p880/proprietary/lib/egl/libGLESv1_CM_tegra.so:system/lib/egl/libGLESv1_CM_tegra.so \
+    vendor/lge/p880/proprietary/lib/egl/libGLESv2_perfhud.so:system/lib/egl/libGLESv2_perfhud.so \
+    vendor/lge/p880/proprietary/lib/egl/libGLESv2_tegra_impl.so:system/lib/egl/libGLESv2_tegra_impl.so \
     vendor/lge/p880/proprietary/lib/egl/libGLESv2_tegra.so:system/lib/egl/libGLESv2_tegra.so \
     vendor/lge/p880/proprietary/lib/hw/audio.primary_vendor.tegra.so:system/lib/hw/audio.primary_vendor.tegra.so \
     vendor/lge/p880/proprietary/lib/hw/audio_policy.vendor.tegra.so:system/lib/hw/audio_policy.vendor.tegra.so \
@@ -30,6 +37,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p880/proprietary/lib/hw/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
     vendor/lge/p880/proprietary/lib/hw/hwcomposer.tegra.so:system/lib/hw/hwcomposer.tegra.so \
     vendor/lge/p880/proprietary/lib/hw/lights.tegra.so:system/lib/hw/lights.tegra.so \
+    vendor/lge/p880/proprietary/lib/hw/camera.tegra.so:system/lib/hw/camera.tegra.so \
     vendor/lge/p880/proprietary/lib/hw/sensors.tegra.so:system/lib/hw/sensors.tegra.so \
     vendor/lge/p880/proprietary/lib/lge-ril.so:system/lib/lge-ril.so \
     vendor/lge/p880/proprietary/lib/lib-lge-drm.so:system/lib/lib-lge-drm.so \
@@ -86,13 +94,15 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p880/proprietary/lib/libnvwsi.so:system/lib/libnvwsi.so \
     vendor/lge/p880/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/lge/p880/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
-    vendor/lge/p880/proprietary/etc/firmware/BCM4330B1_002.001.003.0550.0633.hcd:system/etc/firmware/BCM4330B1_002.001.003.0550.0633.hcd \
+    vendor/lge/p880/proprietary/etc/firmware/BCM4330B1_002.001.003.0379.0390.hcd:system/etc/firmware/BCM4330B1_002.001.003.0379.0390.hcd \
+    vendor/lge/p880/proprietary/etc/firmware/BCM4330B1_002.001.003.0609.0636.hcd:system/etc/firmware/BCM4330B1_002.001.003.0609.0636.hcd \
+    vendor/lge/p880/proprietary/etc/firmware/BCM4330B1_002.001.003.0967.0970.hcd:system/etc/firmware/BCM4330B1_002.001.003.0967.0970.hcd \
+    vendor/lge/p880/proprietary/etc/firmware/bcm4330.hcd:system/etc/firmware/bcm4330.hcd \
     vendor/lge/p880/proprietary/etc/firmware/nvavp_aud_ucode.bin:system/etc/firmware/nvavp_aud_ucode.bin \
     vendor/lge/p880/proprietary/etc/firmware/nvavp_os_0ff00000.bin:system/etc/firmware/nvavp_os_0ff00000.bin \
     vendor/lge/p880/proprietary/etc/firmware/nvavp_os_eff00000.bin:system/etc/firmware/nvavp_os_eff00000.bin \
     vendor/lge/p880/proprietary/etc/firmware/nvavp_vid_ucode.bin:system/etc/firmware/nvavp_vid_ucode.bin \
     vendor/lge/p880/proprietary/etc/firmware/nvavp_vid_ucode_alt.bin:system/etc/firmware/nvavp_vid_ucode_alt.bin \
-    vendor/lge/p880/proprietary/etc/firmware/BCM4330B1_002.001.003.0550.0633.hcd:system/etc/firmware/BCM4330B1_002.001.003.0550.0633.hcd \
     vendor/lge/p880/proprietary/lib/libddp_omx.so:system/lib/libddp_omx.so \
     vendor/lge/p880/proprietary/lib/libstagefright_soft_ddpdec.so:system/lib/libstagefright_soft_ddpdec.so \
     vendor/lge/p880/proprietary/lib/libSR_AudioIn.so:system/lib/libSR_AudioIn.so \
